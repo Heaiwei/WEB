@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<title>学生信息管理系统</title>
+		<link rel="stylesheet" type="text/css" href="css/login&register.css">
+		<link rel="shortcut icon"  href="images/study.gif">
+	</head>
+	<body>
+		<!--Header-->
+		<header>
+			<nav>
+				<ul>
+					<a href="https://www.baidu.com"><li><img src="icons/log1.gif" width="35"></li></a>
+					<a href="https://www.baidu.com"><li><img src="icons/log2.gif" width="35"></li></a>
+					<a href="login.html"><li><img src="icons/log3.gif" width="35"></li></a>
+					<a href="register.html"><li><img src="icons/log4.gif" width="35"></li></a>
+				</ul>
+			</nav>
+		</header>
+
+		<!--轮播图-->
+		<div class="Viewport">
+			<!--Main-->
+			<main>
+				<div class="container">
+					<form class="register_form" action="RegisterServlet" method="post">
+						<h3>学生信息管理系统</h3>
+						<p>注册</p>
+						<input type="text" autofocus="autofocus" name="username" id="username" value placeholder="用户名" required="required" style="border-radius: 12px">
+						<input type="password" name="password" id="password" value placeholder="密码" required="required" style="border-radius: 12px">
+						<p>权限级别</p>
+						<span class="radio">
+						<input type="radio" name="level" value="用户" checked="checked"><span>用户</span>
+						<input type="radio" name="level" value="管理员"><span>管理员</span>
+					</span>
+						<input id="submit" type="submit" name="submit" value="注册" style="border-radius: 12px">
+						<a  href="javascript:reset()" style="border-radius: 12px"><input id="reset" type="reset" value="重置" style="border-radius: 12px"></a>
+					</form>
+				</div>
+			</main>
+			<div class="wrap" style="left: -600px;" style="clear: both">
+				<img src="picture/picture1.gif" alt="">
+				<img src="picture/picture2.gif" alt="">
+				<img src="picture/picture3.gif" alt="">
+			</div>
+		</div>
+		<script>
+			function reset() {
+				document.getElementById("username").value = "";
+				document.getElementById("password").value = "";
+			}
+		</script>
+		<!--Footer-->
+		<footer>
+			<div class="info">
+				<ul>
+					<a href="#"><li>欢迎注册学生信息管理系统</li></a>
+				</ul>
+			</div>
+			<div class="copyright">
+			   <a href="https://github.com/Heaiwei">HAW</a>
+			</div>
+		</footer>
+	</body>
+</html>

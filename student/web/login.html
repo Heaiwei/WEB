@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="zh" xmlns:width="http://www.w3.org/1999/xhtml" xmlns:border-radius="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8">
+		<title>学生信息管理系统</title>
+		<link rel="stylesheet" type="text/css" href="css/login&register.css">
+		<link rel="shortcut icon"  href="images/study.gif">
+	</head>
+	<body>
+		<!--Header-->
+		<header>
+			<nav>
+				<ul>
+					<a href="https://www.baidu.com"><li><img src="icons/log1.gif" width="35"></li></a>
+					<a href="https://www.baidu.com"><li><img src="icons/log2.gif" width="35"></li></a>
+					<a href="login.html"><li><img src="icons/log3.gif" width="35"></li></a>
+					<a href="register.html"><li><img src="icons/log4.gif" width="35"></li></a>
+				</ul>
+			</nav>
+		</header>
+
+		<!--轮播图-->
+		<div class="Viewport">
+			<main>
+				<div class="container">
+					<form  class="form" action="LoginServlet" method="post">
+						<h3>学生信息管理系统</h3>
+						<img src="icons/user.jpg" width="75"/>
+						<p>请登录</p>
+						<input type="text" autofocus="autofocus" name="username" id="username" value placeholder="用户名" required="required" style="border-radius: 12px">
+						<input type="password" name="password" id="password" value placeholder="密码" required="required" style="border-radius: 12px">
+						<input id="submit" type="submit" name="submit" value="登录" style="border-radius: 12px">
+						<a  href="javascript:reset()" style="border-radius: 12px"><input id="reset" type="reset" value="重置" style="border-radius: 12px"></a>
+					</form>
+				</div>
+			</main>
+			<div class="wrap" style="left: -600px;" style="clear: both">
+				<img src="picture/picture1.gif" alt="">
+				<img src="picture/picture2.gif" alt="">
+				<img src="picture/picture3.gif" alt="">
+			</div>
+		</div>
+		<script>
+			function reset() {
+				document.getElementById("username").value = "";
+				document.getElementById("password").value = "";
+			}
+		</script>
+		<!--Footer-->
+		<footer>
+			<div class="info">
+				<ul>
+					<a href="https://www.baidu.com"><li>欢迎登录学生信息管理系统</li></a>
+				</ul>
+			</div>
+			<div class="copyright">
+				 <a href="https://github.com/Heaiwei">HAW</a>
+			</div>
+		</footer>
+	</body>
+</html>
